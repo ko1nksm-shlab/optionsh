@@ -23,6 +23,6 @@ Note: This sample reuses the `OPTIND` and `OPTARG` variables for other purposes.
 
 Tested by [shellspec](https://github.com/shellspec/shellspec).
 
-## Licence
+## License
 
 Unlicense. Feel free to use it.
