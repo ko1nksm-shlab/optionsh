@@ -105,9 +105,20 @@ Describe "option8.sh"
   End
 
   Specify 'consecutive short options'
-    When run script ./option8.sh -ab
+    When run script ./option8.sh +ab -ab
     The line 1 of output should eq 'FLAG_A: 1'
     The line 2 of output should eq 'FLAG_B: 1'
+    The line 3 of output should eq 'ARG_I: '
+    The line 4 of output should eq 'ARG_J: '
+    The line 5 of output should eq 'OPT_O: '
+    The line 6 of output should eq 'OPT_P: '
+    The lines of output should eq 6
+  End
+
+  Specify 'consecutive short options (negative)'
+    When run script ./option8.sh -ab +ab
+    The line 1 of output should eq 'FLAG_A: '
+    The line 2 of output should eq 'FLAG_B: '
     The line 3 of output should eq 'ARG_I: '
     The line 4 of output should eq 'ARG_J: '
     The line 5 of output should eq 'OPT_O: '
