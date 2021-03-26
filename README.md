@@ -2,6 +2,8 @@
 
 Option parse code for POSIX-compliant shell scripts that high function and short.
 
+**⚠️ No maintenance anymore.** Use the [getoptions - An elegant option parser for shell scripts (sh, bash, zsh and all POSIX shells)](https://github.com/ko1nksm/getoptions).
+
 ## Sample
 
 Implements step by step.
